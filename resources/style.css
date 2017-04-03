@@ -129,6 +129,12 @@ li {
   padding: 4rem 1rem 4rem 3rem;
 }
 
+@media only screen and (min-width: 480px) {
+  #truncatedmenu {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 1024px) {
   html {
     width: 100%;
@@ -168,7 +174,7 @@ li {
     width: 100%;
   }
   #headerboxright {
-    overflow: hidden;
+    display: none;
   }
   #offerings {
     display: flex;
@@ -209,5 +215,8 @@ li {
   #footer {
     position: relative;
     top: 15rem;
+  }
+  #footer span {
+    display: none;
   }
 }
