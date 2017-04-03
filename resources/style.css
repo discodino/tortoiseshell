@@ -1,0 +1,213 @@
+html {
+  font-size: 18px;
+  font-family: Helvetica;
+}
+
+.header {
+  height: 31rem;
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+#headerbanner {
+  display: flex;
+  background-color: cadetblue;
+  font-size: 1rem;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 960px;
+  margin: auto;
+  height: 3rem;
+  position: relative;
+  top: 1rem;
+}
+
+#headerboxleft {
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+}
+
+#headerboxleft img {
+  height: 1.5rem;
+}
+
+#headerboxleft span {
+  padding-left: 1rem;
+}
+
+#headerboxright {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  padding: 1rem 2rem;
+}
+
+#headerboxcontainer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#headerbox {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 1.5rem 5rem;
+  background-color: white;
+  margin-top: 10rem;
+  margin-right: 4rem;
+}
+
+#offerings {
+  display: flex;
+  justify-content: center;
+  height: 8rem;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem 6rem;
+}
+
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+#moreinfo {
+  position: relative;
+  top: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  width: 10rem;
+  background-color: cadetblue;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  padding-left: 1.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.infobox {
+  width: 35%;
+  margin-right: 5%
+}
+
+.infobox p {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 4rem;
+}
+
+#footer {
+  position: relative;
+  top: 4rem;
+  background-color: azure;
+  height: 9rem;
+  max-width: 960px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+}
+
+#footer img {
+  height: 1rem;
+  width: auto;
+  padding: 4rem 1rem 4rem 3rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    width: 100%;
+  }
+  #headerbanner {
+    top: 0rem;
+  }
+  .header {
+    height: 22rem;
+  }
+  #headerbox {
+    padding: 0.75rem 4rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 470px) {
+  html {
+    width: 100%;
+  }
+  #headerbanner {
+    top: 0rem;
+  }
+  .header {
+    height: 17rem;
+    background-position: 20%;
+  }
+  #headerbox {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 9rem;
+    margin-right: 0rem;
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+  }
+  #headerboxright {
+    overflow: hidden;
+  }
+  #offerings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3.77rem;
+    margin-bottom: 3.77rem;
+  }
+  .service {
+    font-size: 0.77rem;
+    height: auto;
+    padding-top: 1.54rem;
+    padding-bottom: 1.54rem;
+  }
+  #moreinfo {
+    position: relative;
+    top: 20rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .infobox {
+    width: 100%;
+  }
+  .title {
+    text-align: center;
+    width: 100%;
+  }
+  .infobox p {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 4rem;
+    font-size: 0.77rem;
+  }
+  #footer {
+    position: relative;
+    top: 15rem;
+  }
+}
